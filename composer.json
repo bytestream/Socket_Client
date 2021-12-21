@@ -17,5 +17,10 @@
     },
     "suggest": {
         "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Horde\\Socket\\": "lib/Horde/Socket"
+        }
     }
 }

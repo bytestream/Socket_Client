@@ -1,6 +1,6 @@
 {
-    "name": "horde/socket-client",
-    "description": "Network socket client library",
+    "name": "bytestream/horde-socket-client",
+    "description": "Horde network socket client library",
     "type": "library",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1",
@@ -11,28 +11,21 @@
             "role": "lead"
         }
     ],
-    "version": "2.1.4",
-    "time": "2020-03-12",
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "https://pear.horde.org"
-        }
-    ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2"
+        "php": "^7.4 || ^8.0",
+        "bytestream/horde-exception": "^2"
     },
     "suggest": {
         "ext-openssl": "*"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Socket_Client": "2.*",
-        "pear-horde/Horde_Socket_Client": "2.*"
-    },
     "autoload": {
         "psr-0": {
             "Horde_Socket_Client": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Horde_Socket_Client": "test/"
         }
     }
 }

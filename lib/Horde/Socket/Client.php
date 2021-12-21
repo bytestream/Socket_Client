@@ -77,7 +77,7 @@ class Client
      *                          stream_create_context().
      * @param array $params     Additional options.
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      */
     public function __construct(
         $host, $port = null, $timeout = 30, $secure = false,
@@ -181,7 +181,7 @@ class Client
      *  - eof (bool): Indicates EOF event
      *  - unread_bytes (int): Number of bytes left in the socket buffer
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      * @return array  Information about existing socket resource.
      */
     public function getStatus()
@@ -196,7 +196,7 @@ class Client
      * @param int $size  Reading ends when $size - 1 bytes have been read,
      *                   or a newline or an EOF (whichever comes first).
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      * @return string  $size bytes of data from the socket
      */
     public function gets($size)
@@ -214,7 +214,7 @@ class Client
      *
      * @param integer $size  The number of bytes to read from the socket.
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      * @return string  $size bytes of data from the socket.
      */
     public function read($size)
@@ -232,7 +232,7 @@ class Client
      *
      * @param string $data  Data to write.
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      */
     public function write($data)
     {
@@ -253,7 +253,7 @@ class Client
      *
      * @see __construct()
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      */
     protected function _connect(
         $host, $port, $timeout, $secure, $context, $retries = 0
@@ -325,7 +325,7 @@ class Client
     /**
      * Throws an exception is the stream is not a resource.
      *
-     * @throws Horde\Socket\Client\Exception
+     * @throws \Horde\Socket\Client\Exception
      */
     protected function _checkStream()
     {

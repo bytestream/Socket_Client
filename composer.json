@@ -17,15 +17,5 @@
     },
     "suggest": {
         "ext-openssl": "*"
-    },
-    "autoload": {
-        "psr-0": {
-            "Horde_Socket_Client": "lib/"
-        }
-    },
-    "autoload-dev": {
-        "psr-0": {
-            "Horde_Socket_Client": "test/"
-        }
     }
 }
